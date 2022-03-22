@@ -9,11 +9,12 @@
 body {
     font-family: "Poppins", sans-serif;
     height: 100vh;
+    color: #333;
 }
 
 a {
     text-decoration: none;
-    color: #000;
+    color: inherit;
 }
 
 p {
@@ -76,9 +77,9 @@ h3 {
 }
 
 .heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 0 20px;
 }
 
@@ -110,7 +111,7 @@ h3 {
 
 .form,
 .content {
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
 }
 
@@ -127,6 +128,7 @@ h3 {
     border-radius: 5px;
     margin-bottom: 10px;
     font-family: inherit;
+    outline: none;
 }
 
 .form-group label {
@@ -136,10 +138,11 @@ h3 {
 }
 
 .btn {
+    font-family: inherit;
     padding: 10px 20px;
-    border: 1px solid #000;
+    border: none;
     border-radius: 5px;
-    background: #000;
+    background: #6a357f;
     color: #fff;
     font-size: 16px;
     font-weight: 700;
@@ -163,10 +166,15 @@ h3 {
 .btn-block {
     width: 100%;
     margin-bottom: 20px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    transition: all 0.15s ease-out;
 }
 
-.btn:hover {
-    transform: scale(0.98);
+.btn-block:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
 .loadingSpinnerContainer {
